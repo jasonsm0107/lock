@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_store"
+        android:name="com.example.lockcash.ui.store.StoreFragment"
+        android:label="@string/title_store"
+        tools:layout="@layout/fragment_store" />
+
+    <fragment
+        android:id="@+id/navigation_ranking"
+        android:name="com.example.lockcash.ui.ranking.RankingFragment"
+        android:label="@string/title_ranking"
+        tools:layout="@layout/fragment_ranking" />
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.lockcash.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_lock"
+        android:name="com.example.lockcash.ui.lock.LockFragment"
+        android:label="@string/title_lock"
+        tools:layout="@layout/fragment_lock" />
+
+    <fragment
+        android:id="@+id/navigation_event"
+        android:name="com.example.lockcash.ui.event.EventFragment"
+        android:label="@string/title_event"
+        tools:layout="@layout/fragment_event" />
+</navigation>
